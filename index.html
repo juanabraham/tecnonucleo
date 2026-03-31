@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecnoNucleo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f0f1a;
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+    h1 span { color: #00d4aa; }
+    .tagline {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 48px;
+    }
+    .apps {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .app-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      background: #1a1a2e;
+      border: 2px solid #2a2a3e;
+      border-radius: 16px;
+      padding: 32px 40px;
+      text-decoration: none;
+      color: #eee;
+      transition: border-color 0.2s, transform 0.2s;
+      min-width: 180px;
+    }
+    .app-card:hover {
+      border-color: #00d4aa;
+      transform: translateY(-4px);
+    }
+    .app-icon {
+      font-size: 48px;
+      line-height: 1;
+    }
+    .app-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: #00d4aa;
+    }
+    .app-desc {
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+      max-width: 160px;
+    }
+    footer {
+      position: fixed;
+      bottom: 16px;
+      color: #333;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tecno<span>Nucleo</span></h1>
+  <p class="tagline">Herramientas y aplicaciones</p>
+
+  <div class="apps">
+    <a href="https://rutero-app.azurewebsites.net" class="app-card">
+      <div class="app-icon">🚶</div>
+      <div class="app-name">Rutero</div>
+      <div class="app-desc">Encuentra la ruta mas agradable para caminar</div>
+    </a>
+  </div>
+
+  <footer>tecnonucleo.com</footer>
+</body>
+</html>
